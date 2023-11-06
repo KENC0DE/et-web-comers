@@ -9,6 +9,8 @@ from uuid import uuid4
 
 class Base:
     """Base class: where common attributes and methodes is defined.
+
+        id: Unique identification id for created instances.
     """
 
     id = ""

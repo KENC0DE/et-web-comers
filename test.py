@@ -13,7 +13,7 @@ print(obj1.id, obj1.name)
 
 print()
 print("object 2:")
-obj2 = Base()
+obj2 = Base("Fucker")
 print(obj2.id)
 
 print()

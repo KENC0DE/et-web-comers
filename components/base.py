@@ -5,17 +5,23 @@
 
 
 from uuid import uuid4
+import json
+
 
 
 class Base:
     """Base class: where common attributes and methodes is defined.
-
-        id: Unique identification id for created instances.
     """
 
-    id = ""
-
-    def __init__(self):
+    def __init__(self, arg=None, *args, **kwarg):
         """initialize requiremnts
+            arg: single arguments passed to the class.
+            args: list passed to the class.
+            kwargs: dictionary passed to the class.
         """
-        self.id = uuid4()
+        if kwarg and kwarg != {}:
+            for attr, val in kwarg.items():
+                setattr(self, attr, val)
+        else:
+            self.id = uuid4()
+            self.name = arg

@@ -5,9 +5,11 @@
 
 from components.base import Base
 
+dic = {'name': "calm", 'id': "asigned one no problem."}
+
 print("object 1:")
-obj1 = Base()
-print(obj1.id)
+obj1 = Base(**dic)
+print(obj1.id, obj1.name)
 
 print()
 print("object 2:")

@@ -20,3 +20,9 @@ print()
 print("object 3:")
 obj3 = Base()
 print(obj3.id)
+
+print (5 * '-')
+
+print(obj1)
+print(obj2) 
+print(obj3)
